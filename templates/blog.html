@@ -1,0 +1,314 @@
+{% extends "base.html" %}
+
+{% block title %}Blog | Ani Cyber Portfolio{% endblock %}
+
+{% block content %}
+
+<section class="py-5">
+
+    <div class="container">
+
+        <!-- Hero -->
+
+        <div class="glass-card text-center mb-5">
+
+            <h1 class="section-title">
+
+                Cybersecurity Blog
+
+            </h1>
+
+            <p class="section-subtitle">
+
+                Research notes, tutorials, writeups, malware analysis,
+                Linux tricks, scripting, and everything I learn while
+                exploring cybersecurity.
+
+            </p>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="glass-card mb-5">
+
+            <div class="row g-3">
+
+                <div class="col-lg-9">
+
+                    <input
+                        type="text"
+                        class="form-control bg-dark text-light border-secondary"
+                        placeholder="Search articles...">
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <button class="btn btn-purple w-100">
+
+                        <i class="bi bi-search"></i>
+
+                        Search
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Categories -->
+
+        <div class="mb-5">
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+                All
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+                Web Security
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+                Linux
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+                Malware
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+                Reverse Engineering
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+                Active Directory
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+                Python
+            </button>
+
+        </div>
+
+        <!-- Blog Cards -->
+
+        <div class="row g-4">
+
+            <!-- Card -->
+
+            <div class="col-lg-4">
+
+                <div class="glass-card h-100">
+
+                    <small class="text-purple">
+
+                        July 2026
+
+                    </small>
+
+                    <h3 class="mt-3">
+
+                        Understanding SQL Injection
+
+                    </h3>
+
+                    <p class="text-gray">
+
+                        Learn how SQL Injection works,
+                        common attack vectors,
+                        and mitigation techniques.
+
+                    </p>
+
+                    <div class="mt-3">
+
+                        <span class="badge bg-primary">
+
+                            Web Security
+
+                        </span>
+
+                        <span class="badge bg-success">
+
+                            Beginner
+
+                        </span>
+
+                    </div>
+
+                    <div class="mt-4">
+
+                        <a href="#"
+                           class="btn btn-purple">
+
+                            Read Article
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="col-lg-4">
+
+                <div class="glass-card h-100">
+
+                    <small class="text-purple">
+
+                        July 2026
+
+                    </small>
+
+                    <h3 class="mt-3">
+
+                        Building My First HTB Machine
+
+                    </h3>
+
+                    <p class="text-gray">
+
+                        The complete process of designing,
+                        creating and testing
+                        a vulnerable lab.
+
+                    </p>
+
+                    <div class="mt-3">
+
+                        <span class="badge bg-warning text-dark">
+
+                            HTB
+
+                        </span>
+
+                        <span class="badge bg-info text-dark">
+
+                            Lab
+
+                        </span>
+
+                    </div>
+
+                    <div class="mt-4">
+
+                        <a href="#"
+                           class="btn btn-purple">
+
+                            Read Article
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="col-lg-4">
+
+                <div class="glass-card h-100">
+
+                    <small class="text-purple">
+
+                        Coming Soon
+
+                    </small>
+
+                    <h3 class="mt-3">
+
+                        Reverse Engineering Notes
+
+                    </h3>
+
+                    <p class="text-gray">
+
+                        Ghidra,
+                        x64dbg,
+                        PE analysis,
+                        unpacking,
+                        and binary reversing.
+
+                    </p>
+
+                    <div class="mt-3">
+
+                        <span class="badge bg-danger">
+
+                            Reverse
+
+                        </span>
+
+                    </div>
+
+                    <div class="mt-4">
+
+                        <button class="btn btn-outline-purple">
+
+                            Coming Soon
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Newsletter -->
+
+        <div class="glass-card text-center mt-5">
+
+            <h2>
+
+                Stay Updated
+
+            </h2>
+
+            <p class="text-gray">
+
+                I'll regularly publish cybersecurity articles,
+                project updates, writeups, and research.
+
+            </p>
+
+            <div class="row justify-content-center mt-4">
+
+                <div class="col-lg-6">
+
+                    <div class="input-group">
+
+                        <input
+                            type="email"
+                            class="form-control bg-dark text-light border-secondary"
+                            placeholder="Email address">
+
+                        <button class="btn btn-purple">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

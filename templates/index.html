@@ -1,0 +1,425 @@
+{% extends "base.html" %}
+
+{% block title %}Home | The Watching Owl Portfolio{% endblock %}
+
+{% block content %}
+
+<!-- =========================
+Hero Section
+========================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-5">
+
+            <div class="col-lg-7">
+
+                <div class="terminal glass-card">
+
+                    <div class="terminal-header">
+
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+
+                        <span class="terminal-title">
+                            terminal@animesh
+                        </span>
+
+                    </div>
+
+                    <div class="terminal-body">
+
+<pre>
+
+$ whoami
+
+Animesh Acharya
+
+Cyber Security Student
+
+HTB Player
+
+CTF Enthusiast
+
+Python Developer
+
+Linux User
+
+$ status
+
+<span id="typing"></span>
+
+</pre>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-buttons mt-4">
+
+                    <a href="/projects"
+                       class="btn btn-purple me-3">
+
+                        View Projects
+
+                    </a>
+
+                    <a href="/writeups"
+                       class="btn btn-outline-purple">
+
+                        HTB Writeups
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="glass-card profile-card text-center">
+
+                    <img src="{{ url_for('static',
+                    filename='images/profile.png') }}"
+                         class="profile-img img-fluid"
+                         alt="Profile">
+
+                    <h2 class="mt-4">
+
+                        Animesh Acharya
+
+                    </h2>
+
+                    <p class="text-gray">
+
+                        Building secure systems.
+
+                        Learning offensive security.
+
+                        Sharing knowledge.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+Statistics
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+
+                Dashboard
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                A quick overview of my work.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="glass-card stat-card">
+
+                    <h1 class="counter">12</h1>
+
+                    <p>Projects</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="glass-card stat-card">
+
+                    <h1 class="counter">35</h1>
+
+                    <p>Writeups</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="glass-card stat-card">
+
+                    <h1 class="counter">5</h1>
+
+                    <p>Machines</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="glass-card stat-card">
+
+                    <h1 class="counter">420</h1>
+
+                    <p>Downloads</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+Featured Projects
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center mb-5">
+
+            <div>
+
+                <h2 class="section-title">
+
+                    Featured Projects
+
+                </h2>
+
+                <p class="text-gray">
+
+                    Some of my latest cybersecurity projects.
+
+                </p>
+
+            </div>
+
+            <a href="/projects"
+               class="btn btn-outline-purple">
+
+                View All
+
+            </a>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="glass-card project-card">
+
+                    <h4>
+
+                        AI Drowsiness Detector
+
+                    </h4>
+
+                    <p class="text-gray">
+
+                        Flask • OpenCV • MediaPipe
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="glass-card project-card">
+
+                    <h4>
+
+                        Cyber Portfolio
+
+                    </h4>
+
+                    <p class="text-gray">
+
+                        Flask • Bootstrap • Render
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="glass-card project-card">
+
+                    <h4>
+
+                        HTB Machine
+
+                    </h4>
+
+                    <p class="text-gray">
+
+                        VulnHub Style Lab
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+Skills
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+
+                Skills
+
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3">
+
+                <div class="glass-card text-center">
+
+                    <i class="bi bi-terminal fs-1 text-purple"></i>
+
+                    <h5 class="mt-3">
+
+                        Linux
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="glass-card text-center">
+
+                    <i class="bi bi-shield-lock fs-1 text-purple"></i>
+
+                    <h5 class="mt-3">
+
+                        Cyber Security
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="glass-card text-center">
+
+                    <i class="bi bi-code-slash fs-1 text-purple"></i>
+
+                    <h5 class="mt-3">
+
+                        Python
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="glass-card text-center">
+
+                    <i class="bi bi-hdd-network fs-1 text-purple"></i>
+
+                    <h5 class="mt-3">
+
+                        Networking
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+Call to Action
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="glass-card text-center">
+
+            <h2>
+
+                Let's Build Something Secure
+
+            </h2>
+
+            <p class="text-gray">
+
+                Explore my projects, HTB writeups,
+                blogs, and cybersecurity research.
+
+            </p>
+
+            <a href="/contact"
+               class="btn btn-purple mt-3">
+
+                Contact Me
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

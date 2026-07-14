@@ -1,0 +1,280 @@
+/* ==========================================================
+   TERMINAL
+   Ani Cyber Portfolio
+========================================================== */
+
+/* ===========================
+   Terminal Window
+=========================== */
+
+.terminal{
+
+    background:#0b0f16;
+
+    border:1px solid rgba(139,92,246,.25);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.45),
+        0 0 25px rgba(139,92,246,.12);
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.terminal-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 18px;
+
+    background:#141824;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+/* macOS Window Buttons */
+
+.dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+.red{
+
+    background:#ff5f56;
+
+}
+
+.yellow{
+
+    background:#ffbd2e;
+
+}
+
+.green{
+
+    background:#27c93f;
+
+}
+
+/* Window Title */
+
+.terminal-title{
+
+    margin-left:12px;
+
+    color:#bcbcbc;
+
+    font-size:.9rem;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===========================
+   Terminal Body
+=========================== */
+
+.terminal-body{
+
+    padding:28px;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#d8d8d8;
+
+    overflow-x:auto;
+
+}
+
+.terminal-body pre{
+
+    margin:0;
+
+    background:transparent;
+
+    border:none;
+
+    padding:0;
+
+    color:inherit;
+
+    white-space:pre-wrap;
+
+    font-family:"JetBrains Mono", monospace;
+
+}
+
+/* ===========================
+   Prompt
+=========================== */
+
+.terminal-body::selection{
+
+    background:rgba(139,92,246,.4);
+
+}
+
+/* Prompt Color */
+
+.terminal-body pre::first-line{
+
+    color:var(--green);
+
+}
+
+/* ===========================
+   Typing Text
+=========================== */
+
+#typing{
+
+    color:var(--cyan);
+
+    font-weight:600;
+
+}
+
+/* Cursor */
+
+#typing::after{
+
+    content:"▌";
+
+    color:var(--green);
+
+    margin-left:2px;
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+    0%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ===========================
+   Fake Command Styling
+=========================== */
+
+.command{
+
+    color:var(--green);
+
+}
+
+.output{
+
+    color:#d6d6d6;
+
+}
+
+.highlight{
+
+    color:var(--primary-light);
+
+}
+
+.warning{
+
+    color:#ffd166;
+
+}
+
+.error{
+
+    color:#ff5f56;
+
+}
+
+/* ===========================
+   Terminal Glow
+=========================== */
+
+.terminal:hover{
+
+    border-color:rgba(139,92,246,.45);
+
+    box-shadow:
+
+        0 0 30px rgba(139,92,246,.18),
+
+        0 0 70px rgba(139,92,246,.08);
+
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+.terminal-body::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.terminal-body::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    .terminal-body{
+
+        padding:18px;
+
+        font-size:13px;
+
+    }
+
+    .terminal-title{
+
+        display:none;
+
+    }
+
+}

@@ -1,0 +1,408 @@
+/* ==========================================================
+   ANIMATIONS
+   Ani Cyber Portfolio
+========================================================== */
+
+/* ===========================
+   Fade Up
+=========================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   Fade In
+=========================== */
+
+.fade{
+
+    animation:fade .7s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ===========================
+   Floating Animation
+=========================== */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* ===========================
+   Pulse
+=========================== */
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        box-shadow:0 0 0 rgba(139,92,246,.3);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+        box-shadow:0 0 20px rgba(139,92,246,.35);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        box-shadow:0 0 0 rgba(139,92,246,.3);
+
+    }
+
+}
+
+/* ===========================
+   Glow
+=========================== */
+
+.glow{
+
+    animation:glow 3s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        box-shadow:0 0 10px rgba(139,92,246,.15);
+
+    }
+
+    to{
+
+        box-shadow:
+            0 0 20px rgba(139,92,246,.35),
+            0 0 45px rgba(139,92,246,.18);
+
+    }
+
+}
+
+/* ===========================
+   Rotate
+=========================== */
+
+.rotate{
+
+    animation:rotate 20s linear infinite;
+
+}
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===========================
+   Slide Left
+=========================== */
+
+.slide-left{
+
+    animation:slideLeft .8s ease;
+
+}
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ===========================
+   Slide Right
+=========================== */
+
+.slide-right{
+
+    animation:slideRight .8s ease;
+
+}
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ===========================
+   Scale In
+=========================== */
+
+.scale{
+
+    animation:scaleIn .5s ease;
+
+}
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ===========================
+   Hero Background
+=========================== */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    background:radial-gradient(circle,
+    rgba(139,92,246,.12),
+    transparent 70%);
+
+    right:-200px;
+
+    top:-150px;
+
+    border-radius:50%;
+
+    filter:blur(100px);
+
+    animation:float 8s ease-in-out infinite;
+
+    z-index:-1;
+
+}
+
+/* ===========================
+   Hover Lift
+=========================== */
+
+.hover-lift{
+
+    transition:all .35s ease;
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================
+   Icon Hover
+=========================== */
+
+.social-icon i{
+
+    transition:.3s;
+
+}
+
+.social-icon:hover i{
+
+    transform:scale(1.2);
+
+}
+
+/* ===========================
+   Button Hover
+=========================== */
+
+.btn{
+
+    transition:all .3s ease;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.glass-nav{
+
+    transition:
+
+        background .35s ease,
+
+        box-shadow .35s ease,
+
+        padding .35s ease;
+
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.project-card,
+.stat-card{
+
+    transition:all .35s ease;
+
+}
+
+.project-card:hover,
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================
+   Images
+=========================== */
+
+.profile-img{
+
+    transition:.4s ease;
+
+}
+
+.profile-img:hover{
+
+    transform:scale(1.05);
+
+}

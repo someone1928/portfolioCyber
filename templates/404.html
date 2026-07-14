@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}404 | Page Not Found{% endblock %}
+
+{% block content %}
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="glass-card text-center">
+
+            <div class="display-1 text-purple mb-3">
+
+                404
+
+            </div>
+
+            <h2 class="mb-4">
+
+                Target Not Found
+
+            </h2>
+
+            <p class="text-gray mb-5">
+
+                The requested resource could not be located.
+                It may have been moved, deleted,
+                or never existed.
+
+            </p>
+
+<pre class="text-start bg-dark p-4 rounded">
+
+$ curl https://anicyber.dev/unknown-page
+
+HTTP/1.1 404 Not Found
+
+Error:
+Resource does not exist.
+
+Suggestion:
+Return to homepage.
+
+</pre>
+
+            <div class="mt-5">
+
+                <a href="{{ url_for('main.index') }}"
+                   class="btn btn-purple">
+
+                    <i class="bi bi-house-fill"></i>
+
+                    Return Home
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

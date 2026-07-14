@@ -1,0 +1,410 @@
+/* ==========================================================
+   COMPONENTS
+   Ani Cyber Portfolio
+========================================================== */
+
+/* ===========================
+   Glass Card
+=========================== */
+
+.glass-card{
+
+    background:var(--glass);
+
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border-radius:var(--radius);
+
+    padding:30px;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-dark);
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.glass-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.05),
+        transparent 45%
+    );
+
+    pointer-events:none;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(139,92,246,.35);
+
+    box-shadow:var(--shadow-purple);
+
+}
+
+/* ===========================
+   Statistics Cards
+=========================== */
+
+.stat-card{
+
+    text-align:center;
+
+}
+
+.stat-card h1{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:var(--text-secondary);
+
+    margin:0;
+
+}
+
+/* ===========================
+   Project Cards
+=========================== */
+
+.project-card{
+
+    height:100%;
+
+}
+
+.project-card h4{
+
+    margin-top:10px;
+
+    margin-bottom:15px;
+
+}
+
+.project-card p{
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn{
+
+    border-radius:12px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.btn-purple{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color:white;
+
+    border:none;
+
+}
+
+.btn-purple:hover{
+
+    color:white;
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-purple);
+
+}
+
+.btn-outline-purple{
+
+    color:var(--primary);
+
+    border:1px solid var(--primary);
+
+    background:transparent;
+
+}
+
+.btn-outline-purple:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ===========================
+   Badges
+=========================== */
+
+.badge{
+
+    padding:.55rem .8rem;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===========================
+   Forms
+=========================== */
+
+.form-control{
+
+    background:rgba(255,255,255,.03)!important;
+
+    color:var(--text)!important;
+
+    border:1px solid var(--border)!important;
+
+    border-radius:12px;
+
+    padding:14px;
+
+}
+
+.form-control:focus{
+
+    background:rgba(255,255,255,.05)!important;
+
+    color:white!important;
+
+    border-color:var(--primary)!important;
+
+    box-shadow:0 0 0 .2rem rgba(139,92,246,.18)!important;
+
+}
+
+.form-control::placeholder{
+
+    color:var(--text-muted);
+
+}
+
+/* ===========================
+   Input Group
+=========================== */
+
+.input-group .btn{
+
+    border-radius:0 12px 12px 0;
+
+}
+
+/* ===========================
+   Tables
+=========================== */
+
+.table{
+
+    color:white;
+
+}
+
+.table td,
+.table th{
+
+    border-color:var(--border);
+
+}
+
+/* ===========================
+   Lists
+=========================== */
+
+ul{
+
+    padding-left:20px;
+
+}
+
+li{
+
+    margin-bottom:10px;
+
+    color:var(--text-secondary);
+
+}
+
+/* ===========================
+   Code Blocks
+=========================== */
+
+pre{
+
+    background:#0f111a;
+
+    color:#8ef7ff;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    overflow:auto;
+
+    border:1px solid var(--border);
+
+}
+
+code{
+
+    color:#8ef7ff;
+
+}
+
+/* ===========================
+   Images
+=========================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ===========================
+   Alerts
+=========================== */
+
+.alert{
+
+    border:none;
+
+    border-radius:14px;
+
+    backdrop-filter:blur(15px);
+
+}
+
+/* ===========================
+   Progress
+=========================== */
+
+.progress{
+
+    height:10px;
+
+    border-radius:30px;
+
+    background:#1a1a24;
+
+}
+
+.progress-bar{
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--cyan)
+    );
+
+}
+
+/* ===========================
+   Hover Glow
+=========================== */
+
+.glow:hover{
+
+    box-shadow:
+
+        0 0 15px rgba(139,92,246,.4),
+
+        0 0 35px rgba(139,92,246,.25);
+
+}
+
+/* ===========================
+   Section Title
+=========================== */
+
+.section-title{
+
+    font-size:2.5rem;
+
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   Cards Animation
+=========================== */
+
+.project-card,
+.stat-card,
+.glass-card{
+
+    animation:fadeIn .6s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

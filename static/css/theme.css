@@ -1,0 +1,273 @@
+/* ==========================================================
+   THEME
+   Ani Cyber Portfolio
+========================================================== */
+
+:root{
+
+    /* Primary Colors */
+
+    --primary:#8b5cf6;
+    --primary-light:#a78bfa;
+    --primary-dark:#6d28d9;
+
+    /* Accent */
+
+    --cyan:#00d4ff;
+    --green:#00ff9d;
+    --red:#ff4d6d;
+    --yellow:#ffd166;
+
+    /* Background */
+
+    --bg:#09090f;
+    --bg-secondary:#11111a;
+    --bg-card:#171722;
+
+    /* Text */
+
+    --text:#ffffff;
+    --text-secondary:#bdbdbd;
+    --text-muted:#7a7a8c;
+
+    /* Border */
+
+    --border:rgba(255,255,255,.08);
+
+    /* Glass */
+
+    --glass:rgba(255,255,255,.05);
+    --glass-hover:rgba(255,255,255,.08);
+
+    /* Shadows */
+
+    --shadow-purple:0 10px 30px rgba(139,92,246,.25);
+    --shadow-dark:0 12px 30px rgba(0,0,0,.35);
+
+    /* Radius */
+
+    --radius:18px;
+
+    /* Animation */
+
+    --transition:.35s ease;
+
+}
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:"JetBrains Mono", monospace;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+   Selection
+=========================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--bg);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-light);
+
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+a:hover{
+
+    color:var(--primary-light);
+
+}
+
+/* ===========================
+   Typography
+=========================== */
+
+h1,h2,h3,h4,h5,h6{
+
+    font-weight:700;
+
+}
+
+.text-purple{
+
+    color:var(--primary);
+
+}
+
+.text-cyan{
+
+    color:var(--cyan);
+
+}
+
+.text-green{
+
+    color:var(--green);
+
+}
+
+.text-red{
+
+    color:var(--red);
+
+}
+
+.text-yellow{
+
+    color:var(--yellow);
+
+}
+
+.text-gray{
+
+    color:var(--text-secondary);
+
+}
+
+/* ===========================
+   Background
+=========================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-2;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(139,92,246,.12),
+        transparent 35%),
+
+        radial-gradient(circle at bottom right,
+        rgba(0,212,255,.08),
+        transparent 35%),
+
+        linear-gradient(
+            180deg,
+            #09090f,
+            #0f0f18,
+            #09090f
+        );
+
+}
+
+/* ===========================
+   Glow Overlay
+=========================== */
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:600px;
+
+    height:600px;
+
+    left:-200px;
+
+    top:-200px;
+
+    border-radius:50%;
+
+    background:rgba(139,92,246,.08);
+
+    filter:blur(120px);
+
+    z-index:-1;
+
+    animation:glowMove 18s infinite alternate ease-in-out;
+
+}
+
+@keyframes glowMove{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(250px,180px);
+
+    }
+
+}

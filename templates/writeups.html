@@ -1,0 +1,341 @@
+{% extends "base.html" %}
+
+{% block title %}Writeups | Ani Cyber Portfolio{% endblock %}
+
+{% block content %}
+
+<section class="py-5">
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="glass-card mb-5">
+
+            <h1 class="section-title">
+
+                Hack The Box & CTF Writeups
+
+            </h1>
+
+            <p class="text-gray">
+
+                A collection of retired HTB machine writeups,
+                CTF solutions, techniques, privilege escalation
+                notes and lessons learned.
+
+            </p>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-3">
+
+                <div class="glass-card text-center">
+
+                    <h2 class="text-purple">
+
+                        35
+
+                    </h2>
+
+                    <p class="text-gray">
+
+                        Total Writeups
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="glass-card text-center">
+
+                    <h2 class="text-purple">
+
+                        18
+
+                    </h2>
+
+                    <p class="text-gray">
+
+                        Linux
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="glass-card text-center">
+
+                    <h2 class="text-purple">
+
+                        12
+
+                    </h2>
+
+                    <p class="text-gray">
+
+                        Windows
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="glass-card text-center">
+
+                    <h2 class="text-purple">
+
+                        5
+
+                    </h2>
+
+                    <p class="text-gray">
+
+                        Active Directory
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="glass-card mb-5">
+
+            <input
+                type="text"
+                class="form-control bg-dark text-light border-secondary"
+                placeholder="Search writeups...">
+
+        </div>
+
+        <!-- Filter Tags -->
+
+        <div class="mb-5">
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+
+                All
+
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+
+                Linux
+
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+
+                Windows
+
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+
+                Active Directory
+
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+
+                Web
+
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+
+                Easy
+
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+
+                Medium
+
+            </button>
+
+            <button class="btn btn-outline-purple btn-sm m-1">
+
+                Hard
+
+            </button>
+
+        </div>
+
+        <!-- Writeup Cards -->
+
+        <div class="row g-4">
+
+            <!-- Card -->
+
+            <div class="col-lg-4">
+
+                <div class="glass-card h-100">
+
+                    <span class="badge bg-success">
+
+                        Linux
+
+                    </span>
+
+                    <span class="badge bg-primary">
+
+                        Easy
+
+                    </span>
+
+                    <h4 class="mt-3">
+
+                        HTB Forest
+
+                    </h4>
+
+                    <p class="text-gray">
+
+                        Enumeration, SMB,
+                        AS-REP Roasting,
+                        BloodHound,
+                        Privilege Escalation.
+
+                    </p>
+
+                    <a href="#"
+                       class="btn btn-purple btn-sm">
+
+                        Read Writeup
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="col-lg-4">
+
+                <div class="glass-card h-100">
+
+                    <span class="badge bg-warning text-dark">
+
+                        Windows
+
+                    </span>
+
+                    <span class="badge bg-danger">
+
+                        Medium
+
+                    </span>
+
+                    <h4 class="mt-3">
+
+                        HTB Active
+
+                    </h4>
+
+                    <p class="text-gray">
+
+                        SMB Enumeration,
+                        Kerberos,
+                        Group Policy Abuse.
+
+                    </p>
+
+                    <a href="#"
+                       class="btn btn-purple btn-sm">
+
+                        Read Writeup
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="col-lg-4">
+
+                <div class="glass-card h-100">
+
+                    <span class="badge bg-secondary">
+
+                        CTF
+
+                    </span>
+
+                    <span class="badge bg-info text-dark">
+
+                        Web
+
+                    </span>
+
+                    <h4 class="mt-3">
+
+                        SQL Injection Challenge
+
+                    </h4>
+
+                    <p class="text-gray">
+
+                        Authentication bypass,
+                        UNION injection,
+                        privilege escalation.
+
+                    </p>
+
+                    <a href="#"
+                       class="btn btn-purple btn-sm">
+
+                        Read Writeup
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="glass-card text-center mt-5">
+
+            <h3>
+
+                Knowledge Grows With Practice
+
+            </h3>
+
+            <p class="text-gray">
+
+                New writeups will be published regularly as I solve
+                Hack The Box machines, CTFs, and build my own labs.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
